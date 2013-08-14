@@ -66,6 +66,19 @@ Finalizando, os dois reFiddles que fiz hoje:
 
 ----
 
+## Bônus
+
+- [cheat-sheet](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/) de expressões regulares do [Cheatography](http://www.cheatography.com/), disponível em [PDF](http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/pdf/) também
+
+E uma lista de outros serviços que testam regex online:
+
+- [Rubular](http://rubular.com/): a Ruby regular expression editor
+- [RegexPal](http://regexpal.com/): a JavaScript regular expression tester
+- [freeformatter](http://www.freeformatter.com/regex-tester.html)
+- [txt2re](http://www.txt2re.com/)
+
+----
+
 [reFiddle]: http://refiddle.com/
 [jsfiddle]: http://jsfiddle.net/
 [disqus]: http://disqus.com/
