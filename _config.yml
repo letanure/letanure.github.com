@@ -101,7 +101,8 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-748374-14'
+        tracking_url : 'letanure.github.io'
     getclicky :
       site_id : 
     mixpanel :
