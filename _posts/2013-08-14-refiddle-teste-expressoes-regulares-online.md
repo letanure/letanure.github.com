@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "reFiddle: teste expressões regulares online"
-description: ""
+description: "Site semelhante ao jsFiddle, para testes de regex, compartilhar e buscar exemplos"
 category: 
 tags: [regex, utilidades]
 ---
