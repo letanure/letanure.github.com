@@ -77,6 +77,7 @@ E uma lista de outros serviços que testam regex online:
 - [RegexPal](http://regexpal.com/): a JavaScript regular expression tester
 - [freeformatter](http://www.freeformatter.com/regex-tester.html)
 - [txt2re](http://www.txt2re.com/)
+- [debuggex](http://www.debuggex.com/): JavaScript, Python, and PCRE. indicada pelo [Luiz Armesto](https://www.facebook.com/luiz.armesto.3)
 
 ----
 
