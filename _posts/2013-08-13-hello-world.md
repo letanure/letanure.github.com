@@ -1,9 +1,7 @@
 ---
 layout: post
-<<<<<<< HEAD
 title:  "Hello World - Post aprendizado"
 date:   2013-08-13 01:12:14
-<!-- categories: jekyll  -->
 ---
 
 
@@ -60,11 +58,3 @@ include de gist:
 [asset pipeline]: http://guides.rubyonrails.org/asset_pipeline.html
 [strikethrough]: https://help.github.com/articles/github-flavored-markdown#strikethrough
 [redcarpet markdown]: https://github.com/vmg/redcarpet
-=======
-title: "Hello World"
-description: ""
-category: 
-tags: []
----
-{% include JB/setup %}
->>>>>>> f24c6d6e5ba819a29311cd382e70d7fa9067923f
