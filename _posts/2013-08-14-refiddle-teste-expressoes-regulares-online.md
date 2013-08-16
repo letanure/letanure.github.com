@@ -72,7 +72,7 @@ Finalizando, os dois reFiddles que fiz hoje:
 
 E uma lista de outros serviços que testam regex online:
 
-- [gskinner RegExr](http://gskinner.com/RegExr/): Feito em Flex, com uma boa lista de exemplos e deregex salvos por usuários
+- [gskinner RegExr](http://gskinner.com/RegExr/): Feito em Flex, com uma boa lista de exemplos e de regex salvos por usuários
 - [Rubular](http://rubular.com/): a Ruby regular expression editor
 - [RegexPal](http://regexpal.com/): a JavaScript regular expression tester
 - [freeformatter](http://www.freeformatter.com/regex-tester.html)
