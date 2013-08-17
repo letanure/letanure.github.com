@@ -16,5 +16,6 @@ Logo depois, resolvi criar um mixin no SASS para gerar essas cores ou outros esq
 
 {% gist 6246587 %}
 
+e um [CodePen](http://codepen.io/letanure/pen/djKkb) com todos 
 
 {% include JB/setup %}
