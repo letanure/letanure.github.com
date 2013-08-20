@@ -34,3 +34,4 @@ Fazer uma lista comparando todos (ou os principais)
 
 e comparar com o nativo, da [especificação de HTML templates da W3C](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html).
 
+http://net.tutsplus.com/tutorials/javascript-ajax/best-practices-when-working-with-javascript-templates/
