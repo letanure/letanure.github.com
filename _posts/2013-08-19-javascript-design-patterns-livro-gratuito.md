@@ -10,7 +10,7 @@ tags: []
 Como eu uso esse blog como um 'favoritos explicado' também, um post só com o índice do livro [Learning JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) do [Addy Osmani](http://addyosmani.com/), itens traduzidos, para o google indexar e o pessoal que procurar em portugues :( achar.
 
 
-Se alguém traduziu ou tem interesse (e permissão!) pra traduzir, só falar que coloco aqui também.
+Se alguém traduziu só falar que coloco aqui também ou se tem interesse (e permissão!) pra traduzir, entra em contato que ajudo.
 
 
 <ul>
