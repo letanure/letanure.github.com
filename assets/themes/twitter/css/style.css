@@ -63,3 +63,27 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+table{
+  margin: 15px 0
+}
+table tr{
+  border-bottom: 1px solid #ddd;
+}  
+table tr:hover{
+  background-color: #eee;
+}
+table tr:last-child{
+  border-bottom: none;
+}
+table tr th{
+  background-color: #ddd;
+  border-right: 1px solid #fff;
+}
+table tr td{
+  border-right: 1px solid #ddd;
+  padding: 3px 10px; 
+}
+table tr td:last-child{
+  border-right: none;
+}
