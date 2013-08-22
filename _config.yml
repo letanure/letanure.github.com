@@ -4,6 +4,9 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # auto: true deprecated
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 pygments: true
 
 # Themes are encouraged to use these universal variables 
@@ -117,7 +120,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : true
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
