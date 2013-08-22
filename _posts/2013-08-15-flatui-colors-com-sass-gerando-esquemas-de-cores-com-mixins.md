@@ -2,7 +2,7 @@
 layout: post
 title: "FlatUI colors com SASS: Gerando esquemas de cores com mixins"
 description: ""
-category: 
+category: blog
 tags: [SASS, Mixins, Cores]
 ---
 

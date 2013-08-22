@@ -2,8 +2,8 @@
 layout: post
 title: "Javascript Design Patterns: livro gratuito do Addy Osmani"
 description: ""
-category: 
-tags: []
+category: blog
+tags: [livro, javascript, design patterns]
 ---
 {% include JB/setup %}
 

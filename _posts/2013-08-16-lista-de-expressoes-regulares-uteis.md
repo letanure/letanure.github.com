@@ -2,8 +2,8 @@
 layout: post
 title: "Lista de expressões regulares úteis"
 description: ""
-category: 
-tags: []
+category: blog
+tags: [regex]
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Templates em JavaScript"
 description: ""
-category: 
-tags: []
+category: blog
+tags: [javascript, templating]
 ---
 {% include JB/setup %}
 
