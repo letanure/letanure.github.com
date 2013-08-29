@@ -441,7 +441,15 @@ Não faz parte do  ```console.```. Ele para a execuçao do script e abre o modo 
 
 ----
 
-### Bônus
+### Bônus 1 - 
+
+Inclua esse script no seu projeto e não tenha medo de usar o console ou esquecer um ```console.log```e dar erro no IE
+
+{% gist 2733067 %}
+
+Caso não exista a funçao console nativa, ele cria, com todos os métodos.
+
+### Bônus 2
 
 [Chrome DevTools Cheatsheet](https://github.com/jaredwilli/devtools-cheatsheet): uma lista com atalhos do DevTools
 
