@@ -1,11 +1,17 @@
 ---
 layout: post
 title: "Comunidades, grupos e listas sobre front-end"
-description: ""
-category: 
-tags: []
+description: "Lista com sites e grupos sobre desenvolvimento frontend"
+category: blog
+tags: [utilidades]
 ---
 {% include JB/setup %}
+
+[meetup](http://www.meetup.com/)
+
+## Developers
+- [addyosmani](http://addyosmani.com/blog/)
+
 
 ## Comunidades no Facebook
 - [desenvolvimentowebbrasil](https://www.facebook.com/groups/desenvolvimentowebbrasil/)
@@ -30,9 +36,11 @@ tags: []
 ## Eventos
 - [sampajs](https://www.facebook.com/groups/sampajs/)
 - [beagajs](https://www.facebook.com/groups/beagajs/)
+- [frontinsampa](http://frontinsampa.com.br/)
 
 ## Vagas de emprego, freelas e jobs diversos
 
 - AngularJS Jobs: trabalhos para que sabe [AngularJS](http://angularjs.org/)
   * [comunidade no Facebook](https://www.facebook.com/angularjobs)
   * [site](https://www.angularjobs.com/)
+
