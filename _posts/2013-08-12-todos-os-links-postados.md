@@ -79,3 +79,5 @@ Uma lista com todos links, de libraries etc já postados aqui.
 - [jslint](http://www.jslint.com/)
 - [javascript não obstrutivo](http://en.wikipedia.org/wiki/Unobtrusive_JavaScript)
 - [jsperf loops](http://jsperf.com/loops/111)
+- [Christian Heilmann](http://christianheilmann.com/)
+- [Javascript Best Practices](http://www.slideshare.net/cheilmann/javascript-best-practices-1041724)

@@ -376,7 +376,11 @@ Mas inserir o jQuery inteiro pra pegar o valor de um input, ou o jQueryUI comple
 Se acostume a compactar, remover comentarios, concatenar os seus javascripts antes de mandar para produção. Hoje em dia existem diversas ferramentas para isso, inclusive online, então nao existem amis desculpas.
 Tenha uma versão de desenvolvimento, normal, comentada e uma para o site em producão. Frameworks back-end modernos ja afzem isso automaticamente. se o seu back-end falar que não, procure no google e esfregue na cara dele, ok?
 
+#Bônus
 
+Apresentaçao do [Christian Heilmann](http://christianheilmann.com/) sobre boas práticas:
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/1041724?rel=0" width="700" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/cheilmann/javascript-best-practices-1041724" title="Javascript Best Practices" target="_blank">Javascript Best Practices</a> </strong> from <strong><a href="http://www.slideshare.net/cheilmann" target="_blank">Christian Heilmann</a></strong> </div>
 
 #### Fontes
 [Thinkful - Javascript Best Practices](http://www.thinkful.com/learn/javascript-best-practices-1)
