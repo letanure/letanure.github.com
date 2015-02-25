@@ -118,7 +118,7 @@ Resumindo, boa parte das boas práticas nada mais são do que definir a váriáv
 
 Fora isso é conhecer os métodos apropriados para cada operação, diferença entre técnicas e ter em mente a finalidade da aplicação, já que cada browser ou dispositivo pode ter uma performance diferente para um mesmo código.
 
-Alguns dos testes de performance entre métodos mostram pouca diferença, de 2% ou 3%, entre métodos, mas buscar a melhor performance em cada parte da sua aplicação irá fazer uma diferença significativa ao final pela soma das pequenas melhorias.
+Alguns dos testes de performance entre métodos mostram pouca diferença, de 2% ou 3%, mas buscar a melhor performance em cada parte da sua aplicação irá fazer uma diferença significativa ao final pela soma das pequenas melhorias.
 
 Essa é uma lista básica de pequenas melhorias para nosso dia a dia. Conhece mais alguma? Contribua, comente!
 
