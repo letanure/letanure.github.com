@@ -7,6 +7,25 @@ tags: []
 ---
 {% include JB/setup %}
 
+
+<div style="background: #5aa8c5; text-align: center; padding: 10px; margin-bottom: 20px;">
+    <svg id="svg-topo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="100%" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" onclick="obt1.reset().play();">
+        <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="90"/>
+        <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="85.74"/>
+        <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="72.947"/>
+        <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="39.74"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="34.042" y1="131.189" x2="67.047" y2="77.781"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="31.306" y1="75.416" x2="92.41" y2="60.987"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="68.81" y1="34.042" x2="122.219" y2="67.046"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="124.584" y1="31.305" x2="139.013" y2="92.409"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="165.957" y1="68.809" x2="132.953" y2="122.219"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="168.693" y1="124.584" x2="107.59" y2="139.012"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="131.19" y1="165.957" x2="77.781" y2="132.953"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="75.417" y1="168.693" x2="60.987" y2="107.59"/>
+    </svg>
+</div>
+
 [Vivus](https://github.com/maxwellito/vivus) é uma lib javascript, sem dependências, para criar animações em SVGs com o efeito de "desenhando", mostrando o SVG sendo desenhado traço por traço com várias opções, como sincronia entre todos os traços ou atraso na animação.
 
 ### Como funciona?
@@ -88,6 +107,7 @@ Juntando tudo você terá o efeito:
 <script>
     document.addEventListener("DOMContentLoaded", function(event) { 
         new Vivus('animacao1', {type: 'delayed', duration: 200});
+        new Vivus('svg-topo', {type: 'delayed', duration: 200});
     });
 </script>
 
