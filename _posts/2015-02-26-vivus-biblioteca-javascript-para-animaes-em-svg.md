@@ -153,8 +153,169 @@ Para controlar a animação, temos três métodos disponíveis, com nomes autoex
     animacao
         .stop()
         .reset()
-        .play(2)
+        .play(1) // velocidade da animação ou negativo para retroceder
 ```
+
+### Playground
+
+<div class="example">
+    <svg id="animacao2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="100%" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
+        <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="72.947"/>
+        <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="39.74"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="31.306" y1="75.416" x2="92.41" y2="60.987"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="124.584" y1="31.305" x2="139.013" y2="92.409"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="168.693" y1="124.584" x2="107.59" y2="139.012"/>
+        <line fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="75.417" y1="168.693" x2="60.987" y2="107.59"/>
+    </svg>
+    <br>
+
+    <style>
+        .example{
+            background: #000;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px
+        }
+        .controls{
+            background: #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .controls label,
+        .controls .actions{
+            display: inline-block;
+            margin: 0 10px 0 0;
+            float: left;
+        }
+        .controls label span,
+        .controls .actions span{
+            display: block;
+            height: 25px;
+            line-height: 25px;
+            font-weight: 600;
+        }
+        .controls label div,
+        .controls .actions div{
+            height: 30px;
+        }
+        #log{
+            float: left;
+        }
+    </style>
+
+    <div class="controls">
+        <label>
+            <span>Duração</span>
+            <div>
+                <input type="range" id="duration" min="100" value="200" max="1000" step="100" list="opt-vel">
+                <datalist id="opt-vel">
+                    <option>100</option>
+                    <option>200</option>
+                    <option>300</option>
+                    <option>400</option>
+                    <option>500</option>
+                    <option>600</option>
+                    <option>700</option>
+                    <option>800</option>
+                    <option>900</option>
+                    <option>1000</option>
+                </datalist>
+            </div>
+        </label>
+        <label>
+            <span>Tipo</span>
+            <div>
+                <select id="type" name="type">
+                    <option value="delayed" selected>delayed</option>
+                    <option value="oneByOne">oneByOne</option>
+                    <option value="async">async</option>
+                </select>
+            </div>
+        </label>
+        <div class="actions">
+            <span>Ações</span>
+            <div>
+                <button type="button" data-action="stop">Stop</button>
+                <button type="button" data-action="play">Play</button>
+                <button type="button" data-action="reset">Reset</button>
+            </div>
+        </div>
+        <div id="log">
+            Log: Início
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        var $controls = $('.controls'),
+            $actions = $('.actions button'),
+            $duration = $('#duration'),
+            $log = $('#log'),
+            finished = false,
+            config = { start: 'manual', type: 'delayed'},
+            anim = new Vivus('animacao2', config, callback),
+            $type = $('#type');
+
+        $duration.on('change', function(e){
+            delete anim;
+            config.duration = $duration.val();
+            anim = new Vivus('animacao2', config, callback);
+        });
+
+        $type.on('change', function(e){
+            delete anim;
+            config.type = $type.val();
+            anim = new Vivus('animacao2', config, callback);
+        })
+
+        $actions.on('click', function(){
+            var action = $(this).data('action');
+            if(finished){
+                finished = false;
+                anim.reset();
+            }
+            if(action === 'stop'){
+                anim.stop();
+                log(0);
+            }
+            if(action === 'reset'){
+                anim.reset();
+                log(1);
+            }
+            if(action === 'play'){
+                anim.play();
+                log(2);
+            }
+        });
+
+        function callback (obj) {
+            finished = true;
+            log(3);
+        }
+
+        function log(step){
+            if(step === 0){
+                $log.text('Animação parada.')
+            }
+            if(step === 1){
+                $log.text('Animação reiniciada.')
+            }
+            if(step === 2){
+                $log.text('Animação sendo executada.')
+            }
+            if(step === 3){
+                $log.text('Animação finalizada.')
+            }
+
+        }
+
+    });
+</script>
+
 
 
 ### Leia mais
