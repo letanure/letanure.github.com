@@ -156,10 +156,47 @@ Para controlar a animação, temos três métodos disponíveis, com nomes autoex
         .play(1) // velocidade da animação ou negativo para retroceder
 ```
 
+### Roteirizando sua animação
+
+Ou tra opção para controlar sua animação, criando um roteiro de cada passo a ser feito é configurando o _type_ para o valor _scenario_ e controlando sua animação através de propriedades nas próprias _tags_ do seu *SVG*
+
+As Propriedades a serem ineridas são _data-start _ e _data-duration_, definindo quando aquele path específico terá sua animação iniciada e por quanto tempo. Exemplo:
+
+<div style="background: #000">
+    <svg id="animacao2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="100%" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
+        <circle data-start="100" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="72.947"/>
+        <circle data-start="50" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="39.74"/>
+        <line data-start="0" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="31.306" y1="75.416" x2="92.41" y2="60.987"/>
+        <line data-start="0" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="124.584" y1="31.305" x2="139.013" y2="92.409"/>
+        <line data-start="100" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="168.693" y1="124.584" x2="107.59" y2="139.012"/>
+        <line data-start="50" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="75.417" y1="168.693" x2="60.987" y2="107.59"/>
+    </svg>
+</div>
+<br>
+
+```html
+<svg id="animacao2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="100%" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
+    <circle data-start="100" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="72.947"/>
+    <circle data-start="50" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="39.74"/>
+    <line data-start="0" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="31.306" y1="75.416" x2="92.41" y2="60.987"/>
+    <line data-start="0" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="124.584" y1="31.305" x2="139.013" y2="92.409"/>
+    <line data-start="100" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="168.693" y1="124.584" x2="107.59" y2="139.012"/>
+    <line data-start="50" data-duration="50" fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" x1="75.417" y1="168.693" x2="60.987" y2="107.59"/>
+</svg>
+```
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        new Vivus('animacao2', {type: 'scenario', duration: 200});
+    });
+</script>
+
 ### Playground
 
 <div class="example">
-    <svg id="animacao2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    <svg id="animacao3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     width="100%" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
         <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="72.947"/>
         <circle fill="none" stroke="#f9f9f9" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="39.74"/>
@@ -257,19 +294,19 @@ Para controlar a animação, temos três métodos disponíveis, com nomes autoex
             $log = $('#log'),
             finished = false,
             config = { start: 'manual', type: 'delayed'},
-            anim = new Vivus('animacao2', config, callback),
+            anim = new Vivus('animacao3', config, callback),
             $type = $('#type');
 
         $duration.on('change', function(e){
             delete anim;
             config.duration = $duration.val();
-            anim = new Vivus('animacao2', config, callback);
+            anim = new Vivus('animacao3', config, callback);
         });
 
         $type.on('change', function(e){
             delete anim;
             config.type = $type.val();
-            anim = new Vivus('animacao2', config, callback);
+            anim = new Vivus('animacao3', config, callback);
         })
 
         $actions.on('click', function(){
